@@ -18,6 +18,8 @@ int main(int argc, char **argv)
         printf("No image data");
         return -1;
     }
+    cv::Size imageSize = image.size();
+    std::cout << "Size: " << imageSize.height << " - " << imageSize.width << std::endl;
     cv::namedWindow("Image", cv::WINDOW_AUTOSIZE);
     cv::imshow("Image", image);
 

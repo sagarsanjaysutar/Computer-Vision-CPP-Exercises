@@ -1,6 +1,12 @@
 #include <iostream>
 #include <opencv2/core/core.hpp>
+/*
 
+Mat is a structure that keeps matrix/image characteristics (rows and columns number, data type etc) and a pointer to data.
+So nothing prevents us from having several instances of Mat corresponding to the same data. A Mat keeps a
+reference count that tells if data has to be deallocated when a particular instance of Mat is destroyed.
+
+*/
 int main(int, char **)
 {
     cv::Size2i twoDSize(4, 4);
@@ -20,14 +26,12 @@ int main(int, char **)
               << cv::format(C, cv::Formatter::FMT_PYTHON) << std::endl
               << std::endl;
 
-    // 3D Matrix -- ????? Need to figure out
-    cv::Mat D(3, threeDSize, CV_32FC4, cv::Scalar(1.1, 0.2, 0.2, 0.2));
-    std::cout << D.size() << "sized, 32 bit float matrix with " << D.channels() << " color channel." << std::endl;
-    // for (int row = 0; row < (D.rows - 1); row++)
-    // {
-    //     cv::Mat DSlice(row, D.cols, CV_32FC4, D.ptr());
-    //     std::cout << cv::format(DSlice, cv::Formatter::FMT_PYTHON) << std::endl
-    //               << std::endl;
-    // }
+    // 2D Matrix
+    cv::Matx<char, 3, 3> D(0, -1, 0, -1, 5, -1, 0, -1, 0);
+    std::cout << D.rows << "x" << D.cols << " sized, 32 bit float matrix with " << D.channels << " color channel." << std::endl
+              << cv::format(D, cv::Formatter::FMT_PYTHON) << std::endl
+              << std::endl;
+
+    // 3D need to figure out
     return 0;
 }

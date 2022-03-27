@@ -33,7 +33,6 @@ int main()
     }
 
     beta = (1.0 - alpha);
-    cout << alpha << beta << endl;
     cv::addWeighted(img0, alpha, img1, beta, 0.0, result);
 
     cv::imshow("Blended image", result);

@@ -28,7 +28,7 @@
       },
       "group": {
         "kind": "build",
-        "isDefault": true
+        "isDefault": false
       },
       "presentation": {
         "reveal": "always",

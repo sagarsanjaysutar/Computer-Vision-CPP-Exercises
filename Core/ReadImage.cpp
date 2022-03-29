@@ -1,3 +1,10 @@
+/*!
+ * @brief Display Image
+ * @author Sagar Sutar
+ *
+ * Basic Program to display an image.
+ */
+
 #include <iostream>
 #include <opencv2/opencv.hpp>
 

@@ -1,5 +1,4 @@
 /*!
- * @file LinearBlending.cpp
  * @brief Blending two images like a slide show effect.
  * @author Sagar Sutar
  * @link https://docs.opencv.org/3.4/d5/dc4/tutorial_adding_images.html

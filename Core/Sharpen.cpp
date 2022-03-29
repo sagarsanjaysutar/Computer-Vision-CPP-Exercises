@@ -1,10 +1,18 @@
+/*!
+ * @brief Sharpening Image
+ * @author Sagar Sutar
+ * @link https://docs.opencv.org/3.4/d7/d37/tutorial_mat_mask_operations.html
+ *
+ * Image Sharpening done in two ways
+ * - Using Sharpening formula on each pixel
+ * - Using a Kernel over the images
+ */
+
 #include <opencv2/core.hpp>
 #include <opencv2/highgui.hpp>
 #include <opencv2/imgproc.hpp>
 #include <iostream>
-/*
-    Refer: https://docs.opencv.org/3.4/d7/d37/tutorial_mat_mask_operations.html
-*/
+
 void Sharpen(const cv::Mat &img, cv::Mat &result);
 
 int main()

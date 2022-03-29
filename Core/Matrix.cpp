@@ -1,12 +1,16 @@
+/*!
+ * @brief Exploring cv::Mat
+ * @author Sagar Sutar
+ * @link https://docs.opencv.org/3.4/d6/d6d/tutorial_mat_the_basic_image_container.html
+ *
+ * Mat is a structure that keeps matrix/image characteristics (rows and columns number, data type etc) and a pointer to data.
+ * So nothing prevents us from having several instances of Mat corresponding to the same data. A Mat keeps a
+ * reference count that tells if data has to be deallocated when a particular instance of Mat is destroyed.
+ */
+
 #include <iostream>
 #include <opencv2/core/core.hpp>
-/*
 
-Mat is a structure that keeps matrix/image characteristics (rows and columns number, data type etc) and a pointer to data.
-So nothing prevents us from having several instances of Mat corresponding to the same data. A Mat keeps a
-reference count that tells if data has to be deallocated when a particular instance of Mat is destroyed.
-
-*/
 int main(int, char **)
 {
     cv::Size2i twoDSize(4, 4);

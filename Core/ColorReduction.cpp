@@ -1,13 +1,15 @@
+/*!
+ * @brief Color Reduction and Lookup table for faster performance
+ * @author Sagar Sutar
+ * @link https://docs.opencv.org/3.4/db/da5/tutorial_how_to_scan_images.html
+ */
+
 #include <opencv2/core.hpp>
 #include <opencv2/core/utility.hpp>
 #include "opencv2/imgcodecs.hpp"
 #include <opencv2/highgui.hpp>
 #include <iostream>
 #include <sstream>
-
-/*!
-    Refer: https://docs.opencv.org/3.4/db/da5/tutorial_how_to_scan_images.html
-*/
 
 cv::Mat &ScanImageAndReduceC(cv::Mat &I, const uchar *table);
 void printTable(const uchar (&table)[256]);

@@ -19,7 +19,7 @@ using std::endl;
 
 int main()
 {
-    std::string imgPath("/home/sagar/Pictures/a.jpg");
+    std::string imgPath("../Dataset/image-03.jpg");
     cv::Mat img, result;
 
     img = cv::imread(imgPath); // DType of each pixel is 8uchar

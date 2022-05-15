@@ -16,9 +16,9 @@ void printTable(const uchar (&table)[256]);
 
 int main()
 {
-    std::string imgPath("/home/sagar/Pictures/doge.jpg"); // Path to image.
-    int divideWith = 30;                                  // Number to divide the image pixels with.
-    uchar table[256];                                     // Table containing a particular pixel value for a range of pixel values e.g. 0..10=0, 10..19=10, 20-29= 20, etc.
+    std::string imgPath("../Dataset/image-04.jpg"); // Path to image.
+    int divideWith = 30;                            // Number to divide the image pixels with.
+    uchar table[256];                               // Table containing a particular pixel value for a range of pixel values e.g. 0..10=0, 10..19=10, 20-29= 20, etc.
     cv::Mat I, J;
 
     I = cv::imread(imgPath, cv::ImreadModes::IMREAD_COLOR);

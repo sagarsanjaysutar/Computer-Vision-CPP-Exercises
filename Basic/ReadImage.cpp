@@ -10,7 +10,7 @@
 
 int main()
 {
-    std::string imgPath("/home/sagar/Pictures/doge.jpg");
+    std::string imgPath("../Dataset/image-03.jpg");
     cv::Mat image;
     image = cv::imread(imgPath, 1);
 

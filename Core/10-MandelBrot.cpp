@@ -118,6 +118,6 @@ int main()
     // Range is the total no. of operations to be executed.
     // In our case we are exploring all pixels paralley/mutltithreading.
     cv::parallel_for_(cv::Range(0, mandelBrotImg.rows * mandelBrotImg.cols), mandelBrot);
-    cv::imwrite("a.png", mandelBrotImg);
+    cv::imwrite("../Output/mandel-brot.png", mandelBrotImg);
     return 0;
 }

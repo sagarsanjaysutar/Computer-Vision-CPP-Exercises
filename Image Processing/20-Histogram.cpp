@@ -114,7 +114,7 @@ cv::Mat Histogram::getHistEqualizedImg(cv::Mat img)
 
 int main()
 {
-    cv::Mat srcImg(cv::imread("/home/sagar/Pictures/a.png"));
+    cv::Mat srcImg(cv::imread("../Dataset/image-06.jpg"));
 
     // Resize and grayscale the image
     cv::cvtColor(srcImg, srcImg, cv::ColorConversionCodes::COLOR_BGR2GRAY);

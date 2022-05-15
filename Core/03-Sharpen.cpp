@@ -17,7 +17,7 @@ void Sharpen(const cv::Mat &img, cv::Mat &result);
 
 int main()
 {
-    std::string imgPath("/home/sagar/Pictures/a.jpg");
+    std::string imgPath("../Dataset/image-05.jpg");
     cv::Mat img, dst0, dst1;
     img = cv::imread(imgPath, cv::ImreadModes::IMREAD_COLOR);
 

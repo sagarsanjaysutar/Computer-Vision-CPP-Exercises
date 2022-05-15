@@ -14,11 +14,11 @@ using std::endl;
 
 int main()
 {
-    std::string img0Path("/home/sagar/Pictures/doge.jpg");
-    std::string img1Path("/home/sagar/Pictures/angry-doge.jpg");
+    std::string img0Path("../Dataset/image-01.jpg");
+    std::string img1Path("../Dataset/image-02.jpg");
 
     cv::Mat img0, img1, result;
-    double alpha = 0.5, beta; // Make sure alpha is between 0-1
+    double alpha = 0.3, beta; // Make sure alpha is between 0-1
 
     img0 = cv::imread(img0Path); // DType of each pixel is 8uchar
     img1 = cv::imread(img1Path);

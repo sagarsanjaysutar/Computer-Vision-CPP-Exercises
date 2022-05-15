@@ -56,7 +56,7 @@ cv::Mat Histogram::getHistGraphImg(cv::Mat img)
     // #00 - Compute histogram
     int numberOfBin = 256;
     float range[] = {0, 256};
-    const float *histRange[] = {range}; // A bit strange way to declare an array. Refer cv::calcHist doc.
+    const float *histRange[] = {range}; // A bit strange way to declare an array. Refer cv::calcHist doc. and https://stackoverflow.com/a/5580952/15060921
     cv::Mat hist;
     cv::calcHist(
         &img,         // Single channeled Image

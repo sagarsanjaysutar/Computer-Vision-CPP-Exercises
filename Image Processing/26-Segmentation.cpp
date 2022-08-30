@@ -1,5 +1,6 @@
 /*!
  * Image Segmentation using Watershed.
+ * This entire thing sucks. Does not work with other images in the Dataset dir. Need to tune thresholding everytime.
  * @link https://docs.opencv.org/3.4/d2/dbd/tutorial_distance_transform.html
  * @link https://opencv24-python-tutorials.readthedocs.io/en/latest/py_tutorials/py_imgproc/py_watershed/py_watershed.html
  */

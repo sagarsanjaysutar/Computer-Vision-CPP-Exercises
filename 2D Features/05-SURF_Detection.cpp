@@ -1,4 +1,8 @@
 
+/**
+ * @brief SURF Feature Detector
+ * @ref https://docs.opencv.org/4.x/d7/d66/tutorial_feature_detection.html
+ */
 #include "opencv2/core.hpp"
 #include <iostream>
 
@@ -18,8 +22,6 @@ int main()
         cout << "Failed to read the image. Please try a different one. \t" << endl;
         return -1;
     }
-
-    
 
     return 0;
 }
